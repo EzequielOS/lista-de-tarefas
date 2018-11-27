@@ -1,31 +1,89 @@
 li:nth-child(odd) {
 background: lightblue;
-list-style-type: upper-roman;
+list-style-type: none;
 }
 li:nth-child(even) {
 background: lightpink;
-list-style-type: upper-roman;
+list-style-type: none;
 }
 
 #todoCorpo{
-    position: absolute;
-    top: 100px;
-    left: 400px;
-    right: 400px;
-    bottom: 100px;
+    position:absolute;
+    top: 10%;
+    left: 30%;
+    width:500px;
+    height:500px;
     font-family: Arial;
     background-color: gray;
-
 }
 
 #cabecalho{
     background-color: lightyellow;
 }
 
-#lista{
-
+.lista{
+    height: 50px;
+    font-size: 25px;
 }
 
-#rodape{
-    background-color: darkgray;
+.checado{
+    height: 50px;
+    font-size: 25px;
+    background-color:lightgreen !important;
+    color: white;
+    text-decoration: line-through;
+}
+
+.checado .checar{
+    color: white;
+    opacity: 100;
+}
+
+.lista:hover .deletar{
+    background-color: darkred;
+    cursor:pointer;
+    opacity: 100 !important;
+}
+
+.lista:hover .checar{
+    background-color: lightyellow;
+    cursor:pointer;
+    opacity: 100 !important;
+}
+
+.lista:hover{
+    background-color: lightyellow;
+}
+
+.checado:hover .deletar{
+    background-color: darkred;
+    cursor:pointer;
+    opacity: 100 !important;
+}
+
+.checado:hover .checar{
+    background-color: lightgreen;
+    cursor:pointer;
+    opacity: 100 !important;
+}
+
+.checado:hover{
+    background-color: lightgreen;
+}
+
+.checar{
+    font-size: 40px;
+    display: inline-block !important;
+    cursor:pointer;
+    opacity: 0;
+}
+
+.deletar{
+    color: black;
+    background: darkred;
+    position: absolute;
+    right: 0px;
+    font-size: 40px;
+    padding: 3px;
+    opacity: 0;
 }
